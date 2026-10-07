@@ -12,8 +12,8 @@ const PowitanieDnia = () => {
      }, []);
 
     const powitanie =
-        godzina >= 5 && godzina < 12 ? "Dzień dobry" :
-        godzina >= 12 && godzina < 18 ? "Dobry wieczór" :
+        godzina >= 6 && godzina < 18 ? "Dzień dobry" :
+        godzina >= 18 && godzina < 24 ? "Dobry wieczór" :
         "Dobranoc";
 
     return (
