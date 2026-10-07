@@ -1,0 +1,18 @@
+Zadanie 1:
+Różnica jest wyraźna: w React opisujemy wynik, a nie kolejne kroki prowadzące do niego. Nie tworzymy elementów ręcznie ani nie wstawiamy ich do dokumentu — robi to za nas React. To podejście nazywamy deklaratywnym (opisujemy co chcemy uzyskać), w przeciwieństwie do podejścia imperatywnego (opisujemy jak to uzyskać), które stosowaliśmy w czystym JavaScripcie. 
+
+Zadanie 2:
+W HTML używamy class, natomiast w JSX słowo class jest zarezerwowane w języku JavaScript, dlatego stosujemy className. 
+
+Zadanie 3:
+Gdy umieścisz wyrażenie wewnątrz { }, JSX wylicza to wyrażenie i wstawia jego wynik do drzewa DOM. 
+Możemy używać:
+-Zmiennych
+-Wywołań funkcji
+-Warunków 
+-Tablic i obiektów
+-Wyrażeń matematycznych
+-Komponentów React
+
+Zadanie 4:
+Komponent funkcyjny to zwykła funkcja JavaScript, która zwraca kod JSX. Nazwa komponentu musi zaczynać się od wielkiej litery — to sposób, w jaki React odróżnia komponenty od zwykłych znaczników HTML. 
