@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podsumowanie zamówienia</title>
+</head>
+<body>
+    <script>
+        const zamowienia = [
+            { produkt: "Klawiatura", cena: 129, ilosc: 2 },
+            { produkt: "Monitor", cena: 899, ilosc: 1 },
+            { produkt: "Myszka", cena: 79, ilosc: 3 },
+        ];
+
+        const produkty = zamowienia.map(({ produkt, cena, ilosc }) => ({
+            produkt,
+            wartosc: cena * ilosc,
+        }));
+
+        const suma = zamowienia.reduce(
+            (akumulator, { cena, ilosc }) => akumulator + cena * ilosc,
+            0
+        );
+
+        const monitor = zamowienia.find(({ produkt }) => produkt === "Monitor");
+
+        console.log("Produkty:", produkty);
+        console.log("Łączna wartość zamówienia:", suma);
+        console.log("Cena monitora:", monitor.cena);
+    </script>
+</body>
+</html>

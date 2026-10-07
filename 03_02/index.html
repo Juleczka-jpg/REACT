@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    const uczniowie = [ 
+ { imie: "Anna", punkty: 85 }, 
+ { imie: "Bartek", punkty: 42 }, 
+ { imie: "Cyprian", punkty: 67 }, 
+ { imie: "Daria", punkty: 30 }, 
+    ];
+
+    const zaliczone = uczniowie.filter(uczen => uczen.punkty >= 50);
+    const imionaZdajacych = zaliczone.map(uczen => uczen.imie);
+    console.log(imionaZdajacych);
+</script>
+</body>
+</html>

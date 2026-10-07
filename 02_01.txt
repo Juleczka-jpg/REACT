@@ -1,0 +1,23 @@
+Zadanie 1:
+Słowo let służy do deklarowania zmiennej, której wartość może się zmieniać. Słowo const deklaruje zmienną, której wartości nie wolno zmieniać po przypisaniu.
+W JavaScript nie podajemy typu, ponieważ język sam rozpoznaje go na podstawie przypisanej wartości. Jest to język o typowaniu dynamicznym.
+Domyślnie używamy const, a let tylko wtedy, gdy faktycznie planujemy zmienić wartość. Dzięki temu kod jest bezpieczniejszy — przypadkowa zmiana stałej zostanie zgłoszona jako błąd.
+
+Zadanie 2:
+// == porównuje wartości, ignorując typ (rzutuje automatycznie) 
+console.log(5 == "5"); // true – liczba i tekst uznane za równe 
+ 
+// === porównuje wartości ORAZ typy (porównanie ścisłe) 
+console.log(5 === "5"); // false – różne typy 
+console.log(5 === 5); // true – ta sama wartość i typ 
+
+Zalecamy stosowanie operatora ścisłego ===, ponieważ porównanie == bywa źródłem trudnych do wykrycia błędów. Operator == automatycznie zmienia typy, co prowadzi do zaskakujących wyników. 
+
+Zadanie 3:
+Reguły skracania funkcji strzałkowych: 
+- Jeśli funkcja ma jeden parametr, można pominąć nawiasy: x => x * 2. 
+- Jeśli ciało to jedno wyrażenie, można pominąć klamry i return. 
+- Jeśli funkcja nie ma parametrów, nawiasy są wymagane: () => "tekst". 
+
+Zadanie 4:
+Konwersja typów jest szczególnie ważna przy formularzach. Gdybyśmy zapomnieli zamienić tekst na liczbę, operator + połączyłby teksty zamiast je dodać. 

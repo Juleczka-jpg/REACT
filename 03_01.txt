@@ -1,0 +1,19 @@
+Zadanie 1:
+map — tworzy nową tablicę, przetwarzając każdy element (np. podwajając liczby).
+filter — tworzy nową tablicę, zachowując tylko wybrane elementy (np. tylko parzyste liczby).
+
+Zadanie 2:
+Metoda find przeszukuje tablicę i zwraca pierwszy element spełniający warunek. Jeśli żaden element nie pasuje, zwraca wartość undefined. Działa podobnie do filter, ale zwraca pojedynczy element, a nie tablicę. 
+
+Zadanie 3:
+Metoda map tworzy nową tablicę, w której każdy element powstaje przez przekształcenie odpowiadającego mu elementu tablicy oryginalnej. Jako argument przyjmuje funkcję, która opisuje przekształcenie pojedynczego elementu. 
+Bardzo ważne jest to, że map nie zmienia oryginalnej tablicy, lecz tworzy nową. Można to porównać do kserowania dokumentu z naniesionymi poprawkami: oryginał zostaje nienaruszony, a powstaje nowa, przerobiona kopia. 
+
+Zadanie 4:
+// Wyciągnięcie właściwości do osobnych zmiennych(destrukturyzacja obiektu)
+const { nazwa, cena } = produkt; 
+
+Destrukturyzacja obiektu jest wyjątkowo przydatna w funkcjach przetwarzających dane. Zamiast wielokrotnie pisać produkt.nazwa i produkt.cena, rozpakowujemy potrzebne właściwości od razu w nagłówku funkcji. 
+
+// Destrukturyzacja bezpośrednio w parametrze funkcji map( destrukturyzacja w parametrze funkcji)
+const opisy = produkty.map(({ nazwa, cena }) => `${nazwa} kosztuje ${cena} zł`); 

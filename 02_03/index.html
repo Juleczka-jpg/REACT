@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function celsjuszNaFahrenheit (celsjusz) {
+        return (celsjusz * 9/5) + 32;
+    }
+    let celsjusz = 20;
+    let fahrenheit = celsjuszNaFahrenheit(celsjusz);
+
+    if(celsjusz < 0) {
+        console.log("Opis pogody: mróz");
+    } else if(celsjusz >= 0 && celsjusz <= 15) {
+        console.log("Opis pogody: chłodno");
+    } else if(celsjusz >= 15 && celsjusz <= 25) {
+        if(celsjusz === 20) {
+            console.log("Temperatura w celsjuszach wynosi 20 stopni, co odpowiada " + fahrenheit + " stopniom Fahrenheita. Opis pogody: ciepła");
+        }
+        else{
+            console.log("Opis pogody: ciepło");
+        }
+    } else {
+        console.log("Opis pogody: upał");
+    }
+
+</script>
+<body>
+
+</body>
+</html>

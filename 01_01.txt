@@ -1,0 +1,16 @@
+Zadanie 1:
+<head> — sekcja zawierająca informacje o dokumencie, które nie są wyświetlane bezpośrednio na stronie. 
+<body> — sekcja zawierająca widoczną treść strony. 
+
+Zadanie 2:
+Selektor klasy — wskazuje elementy z atrybutem class, poprzedzony kropką, na przykład .przycisk. 
+Selektor identyfikatora — wskazuje element z atrybutem id, poprzedzony krzyżykiem, na przykład #menu.
+
+Zadanie 3:
+content — właściwa treść (tekst, obraz). 
+padding — wewnętrzny odstęp między treścią a obramowaniem. 
+border — obramowanie pudełka. 
+margin — zewnętrzny odstęp oddzielający pudełko od sąsiadów. 
+
+Zadanie 4:
+Atrybut for łączy etykietę z polem o tym samym id. Dzięki temu kliknięcie etykiety ustawia kursor w polu. 
