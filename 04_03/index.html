@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .czerwony {
+                color: #e74c3c;
+            }
+        </style>
+    </head>
+    <body>
+        <textarea id="wiadomosc" maxlength="100"></textarea> 
+        <p id="akapit"></p>
+        <script>
+            const wiadomosc = document.getElementById("wiadomosc");
+            const akapit = document.getElementById("akapit");
+
+            wiadomosc.addEventListener("input", function() {
+                const pozostalo = 100 - wiadomosc.value.length;
+                akapit.textContent = "Pozostało znaków: " + pozostalo;
+                akapit.classList.toggle("czerwony", pozostalo <= 10);
+            });
+        </script>
+    </body>
+</html>

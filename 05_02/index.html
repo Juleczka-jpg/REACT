@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+        function obliczSrednia(oceny) {
+            let suma = 0;
+            for (const ocena of oceny) {
+                suma = suma + ocena;
+            }
+            return suma / oceny.length;
+        }
+
+        const oceny = [5, 4, 3, 5];
+        const wynik = obliczSrednia(oceny);
+        console.log(wynik); 
+    </script>
+    </body>
+</html>

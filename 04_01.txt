@@ -1,0 +1,15 @@
+Zadanie 1:
+Po odnalezieniu elementu możemy zmienić jego zawartość. Służą do tego właściwości textContent oraz innerHTML. 
+Właściwość textContent ustawia lub odczytuje tekst elementu, traktując wszystko jako zwykły tekst. Właściwość innerHTML pozwala wstawić treść zawierającą znaczniki HTML, które zostaną zinterpretowane. 
+Należy zachować ostrożność przy innerHTML. Wstawianie treści pochodzącej od użytkownika za pomocą innerHTML może być niebezpieczne, ponieważ pozwala wstrzyknąć złośliwy kod. Gdy wystarcza zwykły tekst, zawsze wybieramy bezpieczniejszą właściwość textContent. 
+
+Zadanie 2:
+Wysłanie formularza generuje zdarzenie submit. Domyślnie powoduje ono przeładowanie strony, co w nowoczesnych aplikacjach zwykle nie jest pożądane. 
+Aby zapobiec przeładowaniu, w funkcji obsługi wywołujemy metodę event.preventDefault. Następnie możemy przetworzyć dane formularza samodzielnie w JavaScript. 
+
+Zadanie 3:
+Nowy element tworzymy metodą createElement, podając nazwę znacznika. Następnie ustawiamy jego treść, a na koniec dołączamy go do rodzica metodą appendChild. 
+Proces tworzenia elementu zawsze przebiega według tego samego schematu: utwórz, skonfiguruj, dołącz.
+
+Zadanie 4:
+Metoda querySelector zwraca tylko pierwszy pasujący element. Aby pobrać wszystkie pasujące elementy, używamy querySelectorAll, która zwraca kolekcję podobną do tablicy. 

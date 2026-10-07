@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .czerwony {
+                color: #e74c3c;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="przelacznik">Zmień kolor</button> 
+        <p id="akapit">przykładowy akapit</p>
+        <script>
+            const przycisk = document.getElementById("przelacznik");
+            const akapit = document.getElementById("akapit");
+
+            przycisk.addEventListener("click", function() {
+                akapit.classList.toggle("czerwony");
+            });
+        </script>
+    </body>
+</html>

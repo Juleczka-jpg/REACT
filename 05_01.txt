@@ -1,0 +1,13 @@
+Zadanie 1:
+Słowo „nadzbiór" oznacza, że każdy poprawny kod JavaScript jest jednocześnie poprawnym kodem TypeScript, ale TypeScript dodaje nowe możliwości. 
+Najważniejszym dodatkiem jest typowanie statyczne — możliwość określania typów danych, sprawdzanych jeszcze przed uruchomieniem programu. Dzięki temu wiele błędów wykrywamy podczas pisania kodu, a nie dopiero w trakcie działania aplikacji. 
+
+Zadanie 2:
+Typ zmiennej określamy za pomocą adnotacji — dwukropka i nazwy typu po nazwie zmiennej. To składnia podobna do deklaracji w C#, choć kolejność jest odwrotna. 
+Podstawowe typy w TypeScript to number, string oraz boolean. Po przypisaniu typu próba przypisania wartości innego typu zostanie zgłoszona jako błąd. 
+
+Zadanie 3:
+Interfejs pełni rolę podobną do klasy w C#, lecz służy wyłącznie do opisu struktury danych, bez logiki. Można go porównać do formularza z określonymi rubrykami: każdy obiekt typu Produkt musi wypełnić wszystkie wymagane rubryki właściwymi typami danych. 
+
+Zadanie 4:
+Podczas kompilacji TypeScript sprawdza poprawność typów. Jeśli wykryje niezgodność, zgłasza błąd i informuje, gdzie się znajduje. Po usunięciu adnotacji typów powstaje czysty JavaScript. 
