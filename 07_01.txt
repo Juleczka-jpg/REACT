@@ -1,0 +1,20 @@
+Zadanie 1:
+Właściwości to dane, które przekazujemy do komponentu z zewnątrz, podobnie jak przekazujemy argumenty do funkcji. Komponent odbiera te dane i wykorzystuje je do zbudowania interfejsu. 
+
+Zadanie 2:
+Dane płyną zawsze w jednym kierunku — od komponentu nadrzędnego (rodzica) do podrzędnego (dziecka).
+
+Zadanie 3:
+Kiedy używać &&:
+- Gdy chcesz wyświetlić komponent tylko wtedy, gdy warunek jest spełniony.
+- Gdy nie potrzebujesz kolejnego warunku(else).
+- Gdy warunek jest prosty i czytelny.
+
+Kiedy używać operatora trójargumentowego:
+- Gdy musisz wyświetlić jedną z dwóch opcji.
+- Gdy chcesz mieć pełną kontrolę nad obiema gałęziami (true i false).
+- Gdy warunek jest bardziej złożony.
+
+Zadanie 4:
+Istnieje jedna szczególna właściwość o nazwie children. Zawiera ona wszystko, co umieścimy pomiędzy znacznikami otwierającym i zamykającym komponentu. Dzięki niej tworzymy komponenty pełniące rolę „opakowania” dla dowolnej treści. 
+Właściwość children jest bardzo przydatna przy tworzeniu komponentów uniwersalnych, takich jak okna dialogowe, panele czy karty. Treść wewnętrzną dostarczamy z zewnątrz, a komponent dba jedynie o oprawę. 
