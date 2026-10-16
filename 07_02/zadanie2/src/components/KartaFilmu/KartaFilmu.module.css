@@ -1,0 +1,26 @@
+.karta {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tytul {
+  margin: 0;
+}
+
+.rezyser {
+  margin: 0;
+}
+
+.ocena {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.czyPolecany {
+  margin: 0;
+}
