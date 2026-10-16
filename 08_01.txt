@@ -1,0 +1,19 @@
+Zadanie 1:
+Stan to dane, które komponent może modyfikować samodzielnie w trakcie działania aplikacji, np. zmieniając wartość licznika lub tekst w formularzu.
+
+Właściwości to dane, które komponent otrzymuje od komponentu nadrzędnego i nie może ich zmieniać, jedynie mogą je odczytywać, np. tytuł strony przekazany z komponentu App do komponentu Header.
+
+Zadanie 2:
+Zwykła zmienna nie nadaje się do przechowywania zmieniających się danych w komponencie React, ponieważ:
+- nie odświeżania automatycznie widoku,
+- tracimy jej wartość przy każdym re-renderingu komponentu,
+- nie synchronizuje się z mechanizmem React, więc UI pozostaje nieaktualny.
+
+Zadanie 3:
+Hook useState zwraca dwuelementową tablicę: aktualną wartość stanu oraz funkcję służącą do jej zmiany. Najczęściej odbieramy te dwa elementy przez destrukturyzację tablic.
+
+Zadanie 4:
+Przy stanach prostych, takich jak liczba czy tekst, zmiana jest oczywista — podajemy nową wartość. Sytuacja komplikuje się, gdy stanem jest tablica lub obiekt. Obowiązuje wtedy ważna zasada: nie mutujemy stanu, czyli nie modyfikujemy istniejącej tablicy lub obiektu, lecz tworzymy nową wartość. 
+React porównuje stary i nowy stan, aby zdecydować o odświeżeniu. Jeśli zmodyfikujemy istniejącą tablicę, React może nie zauważyć zmiany, ponieważ jest to wciąż ten sam obiekt.
+Aby dodać element do tablicy w stanie, tworzymy nową tablicę zawierającą dotychczasowe elementy oraz nowy. Pomaga w tym operator rozwinięcia, zapisywany jako trzy kropki ..., który „rozsypuje” elementy istniejącej tablicy do nowej. 
+Podobna zasada dotyczy obiektów. Aby zmienić jedno pole obiektu w stanie, tworzymy nowy obiekt, kopiując dotychczasowe pola i nadpisując wybrane. 
